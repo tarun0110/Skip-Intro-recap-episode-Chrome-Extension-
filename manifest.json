@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Intro Recap Skipper",
+    "version": "1.0",
+    "description": "Automatically skips intros and recaps on Amazon Prime Video.",
+    "permissions": [
+      "activeTab",
+      "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.primevideo.com/*"],
+        "js": ["script.js"]
+      }
+    ],
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Skip Intro"
+    }
+  }
+  
